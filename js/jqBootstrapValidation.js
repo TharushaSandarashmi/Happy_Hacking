@@ -29,11 +29,11 @@
             }
 		},
     methods: {
-      init : function( options ) {
+      init : function( point) {
 
         var settings = $.extend(true, {}, defaults);
 
-        settings.options = $.extend(true, settings.options, options);
+        settings.options = $.extend(true, settings.options, point);
 
         var $siblingElements = this;
 
